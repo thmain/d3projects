@@ -1,0 +1,20 @@
+{
+  "name": "d3-projects",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "4.1.0",
+    "body-parser": "*",
+    "method-override": "*",
+    "cookie-parser": "*",
+    "express-session": "*",
+    "underscore": "*",
+    "multiparty": "*"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
