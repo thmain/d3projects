@@ -1,15 +1,5 @@
 function renderTree(config, svgNode) {
 
-  d3.select(svgNode)
-    .selectAll("*")
-    .remove();
-   
-  update(config, svgNode);
-  
-};
-
-function update(config, svgNode) {
-
   var dimentions = computeSvgSizeFromData(config),
     source = config.data,
     height = dimentions.height,
@@ -150,7 +140,7 @@ function computeSvgSizeFromData(config){
 
 // Load the data then render the tree
 d3.json("data/flare.json", function(error, data) {
-  var svgNode = $('#reingold-tilford-tree')[0],
+  var svgNode = document.getElementById('reingold-tilford-tree'),
     config = {
       data: data,
       width : svgNode.parentNode.offsetWidth, // Width of the parent container
